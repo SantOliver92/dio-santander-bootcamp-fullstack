@@ -1,0 +1,30 @@
+git init 
+	- Inicializa um conceito do git chamado de repositório
+	- Cria um repositório (arquivo .git) dentro do diretório (pasta)
+	- Cria arquivo untracked
+
+git add
+	- Instrução para poder mover arquivos e começar a dar início ao versionamento
+	- Move o arquivo de untracked para staged
+
+git commit
+	- cria o commit
+	- cria um snapshot (uma "foto") do código
+
+git status
+	- informa o status do arquivo
+
+git clone
+	- Copia repositório para a máquina
+
+git push
+	- Empurra os arquivos "commitados" para o repositóri do GitHub
+
+git pull
+	- Puxa arquivo do GitHub para a máquina
+
+git clean -df
+	- Remove arquivos Untrackeds
+
+git clean -dnf
+	- Mostra arquivos que serão removidos

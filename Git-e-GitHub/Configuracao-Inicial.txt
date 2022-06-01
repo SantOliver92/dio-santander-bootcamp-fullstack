@@ -1,0 +1,9 @@
+Configuração:
+E-mail:	git config --global user.email "digite-seu-email"
+User (Usuário): git config --global user.name Usuario
+
+Verificar Configurações: git config --list
+
+Reescrever as Configurações
+Remover e-mail:	git config --global --unset user.email
+Remover user: git config --global --unset user.nickname
