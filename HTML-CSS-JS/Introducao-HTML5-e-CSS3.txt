@@ -1,0 +1,257 @@
+HISTÓRIA:
+- Criado por Tim Berners -Lee em 1991
+- Elemento HTML
+	* É a base do HTML (tudo dentro do arquivo html é um eletmento)
+	* Começa com uma tag de abertura
+	* a tag pode ter um atributo
+	* o atributo pode mudar uma funcionalidade, aparência, etc
+	* tem-se o conteúdo
+	* e a tag de fechamento
+
+ESTRUTURA BÁSICA:
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta>
+		<title></title>
+	</head>
+	<body>
+	</body>
+</html>
+
+ELEMENTOS:
+<div> 
+	* todos os conteúdos eram feitos em div
+	* muito utilizado até 2014 com a versão 5
+- Elementos criados na versão 5
+<section>
+	* representa uma seção genérica de conteúdo (como uma lista de arquivos)
+	
+<header>
+	* Cabeçalho da página ou de parte da página
+	
+<article>
+	* Representa um conteúdo relevante da página (como artigo de um blog)
+
+<aside>
+	* Conteúdo relacionado ao conteúdo principal (como uma biografia do autor ou links relacionados)
+	* Geralmente representad por uma barra lateral
+
+<footer>
+	* Pode ser o rodapé da página ou de parte da página
+	* Pode ser rodapé de article ou rodapé de section
+
+<h1>-<h6>
+	* Não foram criados na versão 5
+	* Referente ao tamanho da fonte de escrita
+	* Só pode haver um <h1> por página
+
+TEXTOS E LINKS:
+<h1>Título da página</h1>
+<h2>Título de seção</h2>
+<h3>Título de artigo</h3>
+<p>Conteúdo do artigo.</p?>
+	* representa um parágrafo, suporta fotos, textos, vídeos, entre outros
+
+<a>Link</a>
+
+<a href="linkedin.com/in/vilaboim">LinkedIn</a>
+<a href="mailto:lucas@vilaboin=m.com">E-mail</a>
+
+<a  target="_blank">Link</a>
+
+INSERINDO IMAGENS:
+<img>
+
+Source - é obrigatório, guarda o caminho da imagem
+<img src="img/avatar.jpg">
+
+Alt - mostra a descrição da foto quando não é carregada
+      - leitores usam a descrição para mostrar para os usuários o que aquela imagem significa
+<img alt="Foto do sol">
+
+Após escolher as imagens, ir no site tinyPNG.com para ele remover dados desnecessários da imagem.
+
+LISTAS COM HTML:
+- Servem para agrupar coleções de itens
+
+<u> - Representa uma lista em que a ordem dos itens não é importante
+Item 1
+Item 2
+
+<ol> - Representa uma lista em que a ordem dos itens é importante
+1. Item 1
+2. Item 3
+
+<li> - Item da lista
+
+CONCEITOS BÁSICOS DO CSS3:
+	* Linguagem de estilo
+	* Formata página
+	* Criada em 1996
+	* Cria regras de estilos para elementos ou grupos de elementos
+	* É formada por um seletor
+	* nas chaves tem a declaração (propriedade e valor)
+
+- ID x Classe
+<header id="header" class="header"></header>
+<header class="header"></header>
+
+- Box Model - tem 4 áreas
+	* margin - margem (espaçamento entre elementos)
+	* border - borda (circundam o padding e o conteúdo, pode alterar a aparência, como largura e cor)
+	* padding - espaçamento entre a borda e o conteúdo
+	* content - texto, imagem ou vídeo
+
+ESTILIZANDO ELEMENTOS, TEXTOS E LISTAS:
+.post {
+	padding: 10px 5px; => eixo Y e eixo X
+}
+
+.post {
+	padding: 15px 10px 5px 0; => Topo, direita, inferior e esquerdo.
+}
+
+.post {
+	padding-top: 15px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 0;
+}
+
+.post {
+	background-color: green;
+	background-image: url("bg.png");
+	background-position: top;
+}
+
+.post {
+	background-color: green;
+	background-color: #008800;
+	background: #008000;
+}
+
+- Border
+	* Largura: pixels, centímetros, milímetros...
+	* Cor: blue, #0000ff...
+	* Estilo: sólida, pontilhada, tracejada...
+		.post {
+			border: 3px solid blue;
+			border-top: 2px dotted green;
+			border-right: 4px dashed pink;
+		}
+
+.post {
+	border-top: 2px dotted green;
+	border-right: 4px dashed pink;
+	border-bottom: 1px solid purple;
+	border-left: 4px dotted cyan;
+}
+
+.post {
+	border: 3px solid #505050;
+}
+
+.post {
+	border-width: 3px;
+	border-color: #505050;
+	border-style: solid;
+}
+
+	* mudar apenas um lado com aspectos
+.post {
+	border-top-width: 3px;
+	border-top-color: blue;
+	border-top-style: solid;
+}
+
+- Border-radius => permite arredondar os campos de um elemento
+border-radius: 10px;
+border-radius: 50%; (circulo)
+border-radius: 10% 20%;
+border-radius: 10% 20% 15% 22%;
+
+- font-family => altera a fonte do texto
+#title {
+	font-family: Verdana;
+}
+.post_title {
+	font-family: Verdana, Arial; => caso a primeira fonte não pegue muda para a segunda
+}
+
+font-size - altera o tamanho da fonte do texto
+#title {
+	font-size: 30px;
+}
+.post_title {
+	font-size: 18px;
+}
+
+- font-style => altera a aparência d nosso texto
+#title{
+	font-style: normal;
+}
+.subtitle {
+	font-style: italic;
+}
+
+- font-weight => altera o peso do texto
+#title{
+	font-weight: normal;
+}
+.subtitle {
+	font-weight: bold;    =>   negrito
+}
+
+- text-transform => alterna o texto entre maiúscula e minúscula
+#title{
+	text-transform: uppercase;
+}
+.subtitle {
+	text-transform: lowercase;
+}
+.post_title {
+	text-transform: capitalize;     =>  coloca todas as primeiras letras de cada palavra maiúscula
+}
+
+- text-decoration => usado para dar destaque no texto (coloca linhas)
+#title{
+	text-decoration: underline; (linha abaixo)
+}
+.subtitle {
+	text-decoration: overline; (linha acima)
+}
+.post_title {
+	text-decoration: line-through; (linha no meio)
+}
+
+- list-style-type => altera marcador da lista
+ul {
+	list-style-type: square; => altera o simbolo para um quadrado
+}
+ol {
+	list-style-type: upper-roman; => altera para número romano
+}
+ol {
+	list-style-type: "\1F44D"; => altera para um emoji de um joinha
+}
+ul {
+	list-style-image: url("rocket.png"); => coloca uma imagem como  marcador
+}
+
+DIMENSÃO E ALINHAMENTO:
+Propriedades
+- largura e altura
+	* Width
+	* Height
+
+- largura máxima e altura máxima
+	* Max-width
+	* Max-height
+
+- para alinhamento
+	* Margin
+
+- alinhar textos
+	* Text align
